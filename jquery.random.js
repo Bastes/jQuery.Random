@@ -3,7 +3,7 @@
  * jQuery Random plugin
  *
  * @author   Michel Belleville <michel.belleville@gmail.com>
- * @version  1.0.0
+ * @version  1.1.0
  * @requires jQuery v1.3.2 or later
  * @license  GPLv3 [http://www.gnu.org/licenses/gpl.html]
  * 
@@ -19,7 +19,7 @@
   jQuery.fn.random = function(num) {
     num = parseInt(num);
     if (num > this.length) return this.pushStack(this);
-    if (num < 1) num = 1;
+    if (! num || num < 1) num = 1;
     var to_take = new Array();
     this.each(function(i) { to_take.push(i); });
     var to_keep = new Array();
@@ -31,6 +31,6 @@
       to_keep.push(to_take.shift());
     }
     if (invert) to_keep = to_take;
-    return this.filter(function(i) { return $.inArray(to_keep, i) != -1; });
+    return this.filter(function(i) { return $.inArray(i, to_keep) != -1; });
   };
 }) (jQuery);
