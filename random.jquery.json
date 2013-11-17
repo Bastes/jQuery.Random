@@ -1,0 +1,25 @@
+{
+  "name": "random",
+  "title": "jQuery Random",
+  "description": "jQuery plugin that picks elements at random in a collection.",
+  "keywords": [
+    "random"
+  ],
+  "version": "1.1.0",
+  "author": {
+    "name": "Michel Belleville",
+    "url": "https://github.com/Bastes/jQuery.Random"
+  },
+  "licenses": [
+    {
+      "type": "GPLv3",
+      "url": "https://github.com/Bastes/jQuery.Random/blob/1.0.0/GPLv3-LICENSE.txt"
+    }
+  ],
+  "bugs": "https://github.com/Bastes/jQuery.Random/issues",
+  "homepage": "https://github.com/Bastes/jQuery.Random",
+  "docs": "https://github.com/Bastes/jQuery.Random",
+  "dependencies": {
+    "jquery": ">=1.3.4"
+  }
+}
